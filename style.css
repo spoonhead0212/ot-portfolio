@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --sections-width: 84%;
+    --normal-font: 'IBM Plex Mono', monospace;
+    --headers-font: 'Nunito', sans-serif;
+    --normal-font-size: 14px;
+    --normal-text-clr: #9C9C9C;
+    --normal-white-clr: #fff;
+    --normal-black-clr: #000;
+    --cta-btn-bg: #62BA1B;
+    --cta-btn-bg2: #FFA217;
+    --cta-btn-bg3: #000AFF;
+}
+
+body {
+    font-family: var(--normal-font);
+}
+
+header {
+    background-color: var(--normal-black-clr);
+}
+
+/*navigations*/
+.navigations {
+    background-color: #1B1B1B;
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3%;
+    padding-block: 1.5rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
+}
+
+.navigations_icon > li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.navigations_icon > li:nth-child(3) {
+    margin-right: 0;
+}
+.navigations_icon> li a {
+    color: var(--normal-text-clr);
+    font-size: var(--normal-font-size);
+}
+/*navigations ends*/
+
+/*header left and right div*/
+.header-container {
+    width: var(--sections-width);
+    margin-inline: auto;
+    padding-top: 5rem;
+}
+
+.header-container_double {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content :is(h1) {
+    color: var(--normal-white-clr);
+    font-family: var(--headers-font);
+    font-size: clamp(4.5rem, 1.5vw, 1.25rem);
+}
+
+.content :is(p) {
+    color: var(--normal-text-clr);
+    font-size: var(--normal-font);
+    line-height: 24px;
+    width: 600px;
+}
+
+.header-container_left {
+    display: flex;
+    align-items: center;
+}
+
+/*cta btn*/
+.cta-btn {
+    background-color: var(--cta-btn-bg);
+    border: none;
+    margin-top: 1.3rem;
+    padding: .8rem 3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.cta-btn :is(a) {
+    display: block;
+    color: var(--normal-white-clr);
+    font-family: var(--normal-text-clr);
+    font-size: var(--normal-font-size);
+}
+
+.cta-btn :is(span) {
+    margin-left: 10px;
+}
+/*header left and right ends*/
+
+/*companies logo*/
+.companies-icons {
+    margin-top: 2.5rem;
+}
+
+.companies-icons_div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
