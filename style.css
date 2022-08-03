@@ -25,6 +25,7 @@ body {
 
 header {
     background-color: var(--normal-black-clr);
+    width: 100%;
 }
 
 /*navigations*/
