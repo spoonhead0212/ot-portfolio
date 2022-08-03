@@ -30,14 +30,24 @@ header {
 /*navigations*/
 .navigations {
     background-color: #1B1B1B;
-    width: 90%;
+    width: var(--sections-width);
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-inline: 3%;
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     border-bottom-left-radius: .2rem;
     border-bottom-right-radius: .2rem;
+
+}
+
+.logo a {
+    color: var(--normal-white-clr);
+    font-size: 2rem;
+    font-family: var(--headers-font);
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .navigations_icon > li {
@@ -45,7 +55,7 @@ header {
     margin-right: 1rem;
 }
 
-.navigations_icon > li:nth-child(3) {
+.social_icon > li:nth-child(3) {
     margin-right: 0;
 }
 .navigations_icon> li a {
@@ -77,6 +87,12 @@ header {
     font-size: var(--normal-font);
     line-height: 24px;
     width: 600px;
+    margin-block: 1rem;
+}
+
+.my-img :is(img) {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .header-container_left {
@@ -116,7 +132,7 @@ header {
 
 .companies-icons_div {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
