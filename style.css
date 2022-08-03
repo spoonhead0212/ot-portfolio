@@ -52,14 +52,27 @@ header {
     letter-spacing: 2px;
 }
 
+.navvy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 3.5rem;
+}
+
 .navigations_icon > li {
     display: inline-block;
     margin-right: 1rem;
 }
 
+
+
 .social_icon > li:nth-child(3) {
     margin-right: 0;
 }
+
 .navigations_icon> li a {
     color: var(--normal-text-clr);
     font-size: var(--normal-font-size);
@@ -74,27 +87,29 @@ header {
 }
 
 .header-container_double {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
 }
 
 .content :is(h1) {
     color: var(--normal-white-clr);
     font-family: var(--headers-font);
-    font-size: clamp(4.5rem, 1.5vw, 1.25rem);
+    font-size: 3.2rem;
 }
 
-.content :is(p) {
+.content :is(p) { 
     color: var(--normal-text-clr);
     font-size: var(--normal-font);
     line-height: 24px;
-    width: 600px;
+    /* width: 600px; */
     margin-block: 1rem;
 }
 
 .my-img :is(img) {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50;
 }
 
 .header-container_left {
@@ -174,7 +189,8 @@ header {
     margin-inline: auto;
     margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
 
@@ -256,3 +272,34 @@ header {
     background: var(--cta-btn-bg);
 }
 
+
+@media screen and (max-width: 1107px){
+    .content :is(h1) {
+        font-size: calc(3.5rem - 20px);
+    }
+}
+
+@media screen and (max-width: 973px) {
+    .navigations,
+    .case-section,
+    .case-section_div {
+        width: 100%;
+        padding-inline: 4%;
+    }
+    .header-container_double {
+        display: block;
+    }
+
+    .my-img {
+        margin-top: 2rem ;
+    }
+
+    .companies-icons_div {
+        overflow-x: hidden;
+        overflow-x: scroll;
+    }
+
+    .companies-icons_div::-webkit-scrollbar {
+        display: none;
+    }
+}
