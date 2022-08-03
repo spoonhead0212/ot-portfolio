@@ -31,6 +31,8 @@ header {
 
 /*navigations*/
 .navigations {
+    position: fixed;
+    top: 0;
     background-color: #1B1B1B;
     width: var(--sections-width);
     margin-inline: auto;
@@ -102,14 +104,12 @@ header {
     color: var(--normal-text-clr);
     font-size: var(--normal-font);
     line-height: 24px;
-    /* width: 600px; */
     margin-block: 1rem;
 }
 
 .my-img :is(img) {
     width: 100%;
     height: 100%;
-    border-radius: 50;
 }
 
 .header-container_left {
@@ -280,16 +280,25 @@ header {
 }
 
 @media screen and (max-width: 973px) {
+    .header-container,
     .navigations,
     .case-section,
     .case-section_div {
         width: 100%;
         padding-inline: 4%;
     }
+
+    .content :is(h1) {
+        font-size: 40px;
+    }
+
     .header-container_double {
         display: block;
     }
 
+    .header-container_left {
+        margin-top: 1.5rem;
+    }
     .my-img {
         margin-top: 2rem ;
     }
