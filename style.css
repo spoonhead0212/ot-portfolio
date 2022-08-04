@@ -332,10 +332,18 @@ header {
 
 .workings {
     display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
 }
 
-.workings::-webkit-scrollbar {
+.new-work::-webkit-scrollbar {
     display: none;
+}
+
+.workings
+
+.workings img {
+    border-radius: 4px;
 }
 
 
