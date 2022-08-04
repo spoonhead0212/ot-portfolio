@@ -336,7 +336,6 @@ header {
 
 .workings {
     display: flex;
-    overflow-x: hidden;
     overflow-x: scroll;
 }
 
