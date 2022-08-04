@@ -83,6 +83,7 @@ header {
     width: var(--sections-width);
     margin-inline: auto;
     padding-top: 5rem;
+    
 }
 
 .header-container_double {
@@ -324,6 +325,19 @@ header {
     color: var(--normal-white-clr);
 }
 
+.new-work {
+    padding-block: 3rem;
+    overflow-x: scroll;
+}
+
+.workings {
+    display: flex;
+}
+
+.workings::-webkit-scrollbar {
+    display: none;
+}
+
 
 @media screen and (max-width: 1107px){
     .content :is(h1) {
@@ -335,7 +349,8 @@ header {
     .header-container,
     .navigations,
     .wid,
-    .testimonial-tweet {
+    .testimonial-tweet,
+    .new-work {
         width: 100%;
         padding-inline: 4%;
     }
@@ -349,6 +364,10 @@ header {
     .case-section {
         padding-top: 1rem;
         padding-bottom: unset;
+    }
+
+    .new-work {
+        padding-top: 1rem;
     }
 
     .wid-mobile {
@@ -377,7 +396,6 @@ header {
     }
 
     .companies-icons_div {
-        overflow-x: hidden;
         overflow-x: scroll;
     }
 
