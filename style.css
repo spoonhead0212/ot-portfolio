@@ -185,10 +185,11 @@ header {
 .wid {
     width: var(--sections-width);
     margin-inline: auto;
-    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+    gap: 2rem;
 }
 
 .wid_content {
@@ -206,6 +207,10 @@ header {
 .wid_content-div p {
     font-size: var(--normal-font);
     line-height: 24px;
+}
+/*new---------------------*/
+.wid_img {
+    height: 350px;
 }
 
 .wid_img > img {
@@ -327,24 +332,22 @@ header {
 
 .new-work {
     padding-block: 3rem;
-    overflow-x: scroll;
 }
 
 .workings {
     display: flex;
-    justify-content: space-between;
+    overflow-x: hidden;
     overflow-x: scroll;
 }
 
-.new-work::-webkit-scrollbar {
+.workings::-webkit-scrollbar {
     display: none;
 }
 
-.workings img {
+.hustle img {
     border-radius: 4px;
     margin-right: 1rem;
 }
-
 
 @media screen and (max-width: 1107px){
     .content :is(h1) {
@@ -377,8 +380,21 @@ header {
         padding-top: 1rem;
     }
 
+    .wid {
+        gap: 1rem;
+        grid-template-columns: none;
+    }
+
+    .wid_img {
+        height: unset;
+    }
+
     .wid-mobile {
         margin-bottom: 1rem;
+    }
+
+    .testimonial {
+        padding-top: 1rem;
     }
 
     .case-section_div {
