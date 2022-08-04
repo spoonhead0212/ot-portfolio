@@ -27,12 +27,11 @@ body {
 header {
     background-color: var(--normal-black-clr);
     width: 100%;
+
 }
 
 /*navigations*/
 .navigations {
-    position: fixed;
-    top: 0;
     background-color: #1B1B1B;
     width: var(--sections-width);
     margin-inline: auto;
@@ -68,8 +67,6 @@ header {
     display: inline-block;
     margin-right: 1rem;
 }
-
-
 
 .social_icon > li:nth-child(3) {
     margin-right: 0;
@@ -162,7 +159,7 @@ header {
     color: var(--normal-text-clr);
     padding-top: 3rem;
     padding-bottom: 2rem;
-    width: var(--sections-width);
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -170,7 +167,6 @@ header {
     margin-bottom: .5rem;
     font-family: var(--headers-font);
     color: var(--normal-black-clr);
-    /* font-weight: 900; */
 }
 
 .case-section_div > p {
@@ -186,10 +182,10 @@ header {
 }
 /* what i do section*/
 .wid {
+    width: var(--sections-width);
     margin-inline: auto;
     margin-bottom: 3rem;
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
 }
@@ -272,6 +268,62 @@ header {
     background: var(--cta-btn-bg);
 }
 
+.testimonial {
+    padding-block: 3rem;
+    width: 100%;
+    color: var(--normal-text-clr);
+    background: var(--normal-black-clr);
+}
+
+.test-header h2{
+    color: var(--normal-white-clr);
+}
+
+.testimonial-tweet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: var(--sections-width);
+    margin-inline: auto;
+    grid-gap: 2.2rem 1rem;
+}
+
+.testimonial_div {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: 1px solid #9C9C9C;
+    border-style: solid;
+    border-width: 1px;
+    /* border-image: linear-gradient(to right, white, rgba(0, 0, 0, .5)); */
+    border-radius: 4px;
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -10px;
+}
+
+.testimonial_div p {
+    padding-block: 1.5rem;
+    line-height: 24px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: .7rem;
+}
+
+.profile span {
+    font-family: var(--headers-font);
+    color: var(--normal-white-clr);
+}
+
 
 @media screen and (max-width: 1107px){
     .content :is(h1) {
@@ -282,10 +334,30 @@ header {
 @media screen and (max-width: 973px) {
     .header-container,
     .navigations,
-    .case-section,
-    .case-section_div {
+    .wid,
+    .testimonial-tweet {
         width: 100%;
         padding-inline: 4%;
+    }
+
+    .navigations {
+        position: fixed;
+        top: 0;
+    }
+
+    .case-section {
+        padding-top: 1rem;
+        padding-bottom: unset;
+    }
+
+    .wid-mobile {
+        margin-bottom: 1rem;
+    }
+
+    .case-section_div {
+        width: 100%;
+        padding: 6%;
+        margin-bottom: 2rem;
     }
 
     .content :is(h1) {
