@@ -153,6 +153,7 @@ header {
     display: flex;
     justify-content: space-between;
 }
+/* companies logo ends */
 
 
 /* case section */
@@ -181,6 +182,8 @@ header {
     margin-inline: auto;
     margin-bottom: 4rem;
 }
+/* case section ends */
+
 /* what i do section*/
 .wid {
     width: var(--sections-width);
@@ -208,7 +211,7 @@ header {
     font-size: var(--normal-font);
     line-height: 24px;
 }
-/*new---------------------*/
+
 .wid_img {
     height: 350px;
 }
@@ -273,7 +276,9 @@ header {
 .exp-green {
     background: var(--cta-btn-bg);
 }
+/* what i do ends */
 
+/* testimonials starts */
 .testimonial {
     padding-block: 3rem;
     width: 100%;
@@ -334,7 +339,9 @@ header {
     padding-block: 3rem;
     width: 100%;
 }
+/* twstimonials ends */
 
+/* current work */
 .workings {
     width: var(--sections-width);
     margin-inline: auto;
@@ -350,16 +357,19 @@ header {
     max-width: 100%;
     max-height: 100%;
     display: block;
-    border-radius: 4px;
     margin-right: 1rem;
 }
+/* my current work ends */
 
+
+/* media queries begins here */
 @media screen and (max-width: 1107px){
     .content :is(h1) {
         font-size: calc(3.5rem - 20px);
     }
 }
 
+/* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
     .header-container,
     .navigations,
@@ -368,12 +378,15 @@ header {
         width: 100%;
         padding-inline: 4%;
     }
+    /* ends */
 
+    /* fixed header on mobile */
     .navigations {
         position: fixed;
         top: 0;
         z-index: 999;
     }
+    /* ends */
 
     .case-section {
         padding-top: 1rem;
@@ -384,15 +397,18 @@ header {
         padding-top: 1rem;
     }
 
+    /* take up full width */
     .workings {
         width: 100%;
     }
+    /* ----- */
 
     .wid {
         gap: 1rem;
         grid-template-columns: none;
     }
 
+    /* make image go back to it normal size */
     .wid_img {
         height: unset;
     }
@@ -426,6 +442,7 @@ header {
         margin-top: 2rem ;
     }
 
+    /* make icon scroll */
     .companies-icons_div {
         overflow-x: scroll;
     }
@@ -433,4 +450,5 @@ header {
     .companies-icons_div::-webkit-scrollbar {
         display: none;
     }
+    /* ends */
 }
