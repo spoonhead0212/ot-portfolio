@@ -390,17 +390,18 @@ header {
     }
     /* navigation */
     .navvy {
-        /* opacity: 0; */
         padding-block: 1rem;
         background-color: var(--normal-black-clr);
         position: absolute;
         left: 0;
         top: 100%;
         width: 100%;
-        display: block;
+        display: none;
+        transform-origin: right;
     }
 
     .navigations {
+        background-color: var(--normal-black-clr);
         padding-block: .7rem;
         position: fixed;
         top: 0;

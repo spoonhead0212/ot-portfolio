@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".hamburger-menu").click(function(){
-        $(".navvy").toggle(1000);
+        $(".navvy").toggle(500);
     });
 });
 //.hide() is the syntax used to hide element
