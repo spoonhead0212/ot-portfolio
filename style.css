@@ -397,7 +397,6 @@ header {
         top: 100%;
         width: 100%;
         display: none;
-        transform-origin: right;
     }
 
     .navigations {
@@ -411,7 +410,7 @@ header {
     .navigations li {
         display: block;
         text-align: center;
-        padding-block: .7rem;
+        padding-block: 1.5rem;
     }
 
     .social-icon {
