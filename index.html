@@ -17,20 +17,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">   
     <!---->
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!---->
 </head>
 <body>
     <!--header starts-->
     <header>
         <nav class="navigations">
             <div class="logo"><a href="#">OT</a></div>
+            <img class="hamburger-menu" src="images/list.png" alt="">
             <div class="navvy">
                 <ul class="navigations_icon menu">
-                    <li><a href="#">Case studies</a></li>
-                    <li><a href="#">Recent Work</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Get in Touch</a></li>
+                    <li><a href="#wid">What i do</a></li>
+                    <li><a href="#testi">Testimonials</a></li>
+                    <li><a href="#recent">Recent Work</a></li>
+                    <li><a href="touch">Get in Touch</a></li>
                 </ul>
-                <ul class="navigations_icon social-icon">
+                <ul class="social-icon">
                     <li><a href="#"><img src="icon/LinkedIn.svg" alt="linkedin icon"></a></li>
                     <li><a href="#"><img src="icon/Behance.svg" alt="behance icon"></a></li>
                     <li><a href="#"><img src="icon/Twitter.svg" alt="twitter icon"></a></li>
@@ -68,7 +72,7 @@
     <!--header ends-->
 
     <!--what i do section-->
-    <section class="case-section">
+    <section class="case-section" id="wid">
         <div class="case-section_div">
             <h2>What I Do</h2>
             <p>Solving user & business problems since last 15+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -119,7 +123,7 @@
     <!--what i do section end -->
 
     <!--testimonials sections-->
-    <section class="testimonial">
+    <section class="testimonial" id="testi">
         <div class="case-section_div test-header">
             <h2>Testimonials</h2>
             <p>Solving user & business problems since last 5+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
@@ -164,9 +168,9 @@
     <!--testimonials sections ends-->
 
     <!--recent work section-->
-    <section class="new-work">
+    <section class="new-work" id="recent">
         <div class="case-section_div">
-            <h2>Recent Work</h2>
+            <h2 id="waa">Recent Work</h2>
             <p>Solving user & business problems since last 5+ years.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
         <div class="workings">
@@ -180,5 +184,6 @@
     </section>
      <!--recent work section ends-->
 
+     <script src="code.js"></script>
 </body>
 </html>

@@ -31,6 +31,11 @@ header {
 }
 
 /*navigations*/
+.hamburger-menu {
+    display: none;
+    width: 30px;
+}
+
 .navigations {
     background-color: #1B1B1B;
     width: var(--sections-width);
@@ -42,7 +47,6 @@ header {
     padding-block: 1rem;
     border-bottom-left-radius: .2rem;
     border-bottom-right-radius: .2rem;
-
 }
 
 .logo a {
@@ -63,16 +67,22 @@ header {
     margin-right: 3.5rem;
 }
 
-.navigations_icon > li {
+.navigations_icon > li,
+.social-icon > li {
     display: inline-block;
     margin-right: 1rem;
+}
+
+.navigations a:hover {
+    color: var(--cta-btn-bg);
 }
 
 .social_icon > li:nth-child(3) {
     margin-right: 0;
 }
 
-.navigations_icon> li a {
+.navigations_icon> li a,
+.social-icon> li a {
     color: var(--normal-text-clr);
     font-size: var(--normal-font-size);
 }
@@ -371,20 +381,59 @@ header {
 
 /* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
+    /* hamburger-menu */
+    .hamburger-menu {
+        display: inline;
+        position: absolute;
+        right: 4%;
+        cursor: pointer;
+    }
+    /* navigation */
+    .navvy {
+        /* opacity: 0; */
+        padding-block: 1rem;
+        background-color: var(--normal-black-clr);
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        display: block;
+    }
+
+    .navigations {
+        padding-block: .7rem;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+
+    .navigations li {
+        display: block;
+        text-align: center;
+        padding-block: .7rem;
+    }
+
+    .social-icon {
+        text-align: center;
+    }
+
+    .social-icon li {
+        display: inline-block;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .menu {
+        margin-right: 0;
+    }
+    /* ends */
+
     .header-container,
     .navigations,
     .wid,
     .testimonial-tweet {
         width: 100%;
         padding-inline: 4%;
-    }
-    /* ends */
-
-    /* fixed header on mobile */
-    .navigations {
-        position: fixed;
-        top: 0;
-        z-index: 999;
     }
     /* ends */
 
