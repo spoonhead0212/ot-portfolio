@@ -145,18 +145,21 @@ header {
     font-weight: 600;
 }
 
-.cta-btn:hover {
+.cta-btn:hover,
+.form-submit-btn:hover {
     background-color: #3F8E00;
 }
 
-.cta-btn :is(a) {
+.cta-btn :is(a),
+.form-submit-btn :is(a) {
     display: block;
     color: var(--normal-white-clr);
     font-family: var(--normal-text-clr);
     font-size: var(--normal-font-size);
 }
 
-.cta-btn :is(span) {
+.cta-btn,
+.form-submit-btn :is(span) {
     margin-left: 10px;
 }
 /*header left and right ends*/
@@ -383,6 +386,62 @@ header {
 }
 /* my current work ends */
 
+/* contact ends */
+.form-container {
+    width: var(--sections-width);
+    margin-inline: auto;
+}
+
+.contact {
+    width: 100%;
+    background-color: var(--normal-black-clr);
+    padding-block: 3rem;
+}
+
+.test-header > p {
+    color: var(--normal-text-clr);
+}
+
+.form {
+    width: 50%;
+    margin-inline: auto;
+    /* border: 1px solid white; */
+}
+
+input[type="email"],
+input[type="tel"],
+.msg {
+    background: #F8F8F8;
+    margin-top: .4rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    line-height: 21px;
+    width: 98%;
+    border: none;
+    border-radius: 4px;
+    /* font-size: 12px; */
+    font-weight: 600;
+    font-family: var(--normal-font);
+}
+
+.form-label {
+    color: var(--normal-white-clr);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-submit-btn {
+    background-color: var(--cta-btn-bg);
+    width: 98%;
+    padding-block: 1rem;
+    border: none;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    border-radius: 4px;
+}
 
 /* media queries begins here */
 @media screen and (max-width: 1107px){
@@ -393,6 +452,17 @@ header {
 
 /* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
+    /* mobile containers */
+    .header-container,
+    .navigations,
+    .wid,
+    .testimonial-tweet,
+    .form-container {
+        width: 100%;
+        padding-inline: 4%;
+    }
+    /* mobile containers */
+
     /* hamburger-menu */
     .hamburger-menu {
         display: inline;
@@ -413,7 +483,7 @@ header {
 
     .navigations {
         background-color: var(--normal-black-clr);
-        padding-block: .7rem;
+        padding-block: 1.5rem;
         position: fixed;
         top: 0;
         z-index: 999;
@@ -445,13 +515,6 @@ header {
     }
     /* ends */
 
-    .header-container,
-    .navigations,
-    .wid,
-    .testimonial-tweet {
-        width: 100%;
-        padding-inline: 4%;
-    }
     /* ends */
 
     .case-section {
@@ -515,6 +578,10 @@ header {
 
     .companies-icons_div::-webkit-scrollbar {
         display: none;
+    }
+
+    .form {
+        width: 96%;
     }
     /* ends */
 }
