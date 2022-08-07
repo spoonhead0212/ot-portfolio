@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".hamburger-menu").click(function(){
+      $(".hamburger-menu").click(function(){
         $(".navvy").slideToggle(500);
     });
 });
