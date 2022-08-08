@@ -443,6 +443,35 @@ input[type="tel"],
     border-radius: 4px;
 }
 
+/* ANIMATION */
+.animation-right {
+    animation-name: pro-image;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes pro-image {
+    from {right: -100px;}
+    to {right: 0px;}
+
+    /* 0% {
+        opacity: 0;
+        transform: scale(1, 1)
+    } */
+}
+
+.animation-left {
+    animation-name: pro-name;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes pro-name {
+    from {left: -100px;}
+    to {left: 0px;}
+}
+
+
 /* media queries begins here */
 @media screen and (max-width: 1107px){
     .content :is(h1) {
