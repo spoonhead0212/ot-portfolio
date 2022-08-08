@@ -451,7 +451,7 @@ input[type="tel"],
 }
 
 @keyframes pro-image {
-    from {right: -100px;}
+    from {right: -100%;}
     to {right: 0px;}
 
     /* 0% {
@@ -467,7 +467,7 @@ input[type="tel"],
 }
 
 @keyframes pro-name {
-    from {left: -100px;}
+    from {left: -100%;}
     to {left: 0px;}
 }
 
