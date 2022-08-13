@@ -634,7 +634,7 @@ input[type="tel"],
 }
 
 @keyframes pro-name {
-    from {: -100%;}
-    to {left: 0px;}
+    from {right: -100%;}
+    to {right: 0px;}
 }
 }
