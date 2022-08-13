@@ -451,13 +451,8 @@ input[type="tel"],
 }
 
 @keyframes pro-image {
-    from {right: -100%;}
-    to {right: 0px;}
-
-    /* 0% {
-        opacity: 0;
-        transform: scale(1, 1)
-    } */
+    from {left: -100%;}
+    to {left: 0;}
 }
 
 .animation-left {
@@ -467,8 +462,8 @@ input[type="tel"],
 }
 
 @keyframes pro-name {
-    from {left: -100%;}
-    to {left: 0px;}
+    from {right: -100%;}
+    to {right: 0px;}
 }
 
 
@@ -553,6 +548,7 @@ input[type="tel"],
 
     .new-work {
         padding-top: 1rem;
+        padding-bottom: 0;
     }
 
     /* take up full width */
@@ -613,4 +609,32 @@ input[type="tel"],
         width: 96%;
     }
     /* ends */
+
+    /* ANIMATION */
+.animation-right {
+    animation-name: pro-image;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes pro-image {
+    from {left: -100%;}
+    to {left: 0px;}
+
+    /* 0% {
+        opacity: 0;
+        transform: scale(1, 1)
+    } */
+}
+
+.animation-left {
+    animation-name: pro-name;
+    animation-duration: 2s;
+    position: relative;
+}
+
+@keyframes pro-name {
+    from {: -100%;}
+    to {left: 0px;}
+}
 }
