@@ -1,3 +1,7 @@
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
 $(document).ready(function(){
       $(".hamburger-menu").click(function(){
         $(".navvy").slideToggle(500);
