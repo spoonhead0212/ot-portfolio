@@ -142,7 +142,7 @@ header {
     cursor: pointer;
     box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
     border-radius: 4px;
-    font-weight: 600;
+    
 }
 
 .cta-btn:hover,
@@ -154,12 +154,18 @@ header {
 .form-submit-btn :is(a) {
     display: block;
     color: var(--normal-white-clr);
-    font-family: var(--normal-text-clr);
+    font-family: var(--normal-font);
     font-size: var(--normal-font-size);
+    font-weight: 600;
 }
 
 .cta-btn,
 .form-submit-btn :is(span) {
+    /* margin-left: 10px; */
+}
+
+.cta-btn img,
+.form-submit-btn img {
     margin-left: 10px;
 }
 /*header left and right ends*/
