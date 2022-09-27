@@ -74,10 +74,15 @@ header {
     margin-right: 3.5rem;
 }
 
-.navigations_icon > li,
-.social-icon > li {
+:where(.navigations_icon, .social-icon) li {
     display: inline-block;
     margin-right: 1rem;
+    transition: all .5s;
+}
+
+:where(.navigations_icon, .social-icon) li:hover {
+    transform: scale(1.3);
+    padding-inline: 5px;
 }
 
 .navigations a:hover {
@@ -88,8 +93,7 @@ header {
     margin-right: 0;
 }
 
-.navigations_icon> li a,
-.social-icon> li a {
+:where(.navigations_icon, .social-icon) li a {
     color: var(--normal-text-clr);
     font-size: var(--normal-font-size);
 }
@@ -125,6 +129,7 @@ header {
 .my-img :is(img) {
     width: 100%;
     height: 100%;
+    
 }
 
 .header-container_left {
@@ -134,38 +139,49 @@ header {
 
 /*cta btn*/
 .cta-btn {
-    background-color: var(--cta-btn-bg);
-    border: none;
+    background-color: transparent;
+    border: 1px solid white;
     margin-top: 1.3rem;
-    padding: .8rem 3rem;
-    border-radius: 4px;
     cursor: pointer;
-    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
-    border-radius: 4px;
-    
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    z-index: 2;
 }
 
-.cta-btn:hover,
+.cta-btn::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    border-radius: 2px;
+    background-color: var(--cta-btn-bg);
+    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+    z-index: -1;
+ }
+
+ .cta-btn:hover::after {
+    top: 0;
+    left: 0;
+    transition: all ease-in-out .2s;
+ }
+
 .form-submit-btn:hover {
     background-color: #3F8E00;
 }
 
-.cta-btn :is(a),
-.form-submit-btn :is(a) {
+:where(.cta-btn, .form-submit-btn) a {
     display: block;
+    padding: .90rem 3rem .90rem 3rem;
     color: var(--normal-white-clr);
     font-family: var(--normal-font);
     font-size: var(--normal-font-size);
     font-weight: 600;
 }
 
-.cta-btn,
-.form-submit-btn :is(span) {
-    /* margin-left: 10px; */
-}
-
-.cta-btn img,
-.form-submit-btn img {
+:where(.cta-btn, .form-submit-btn) img {
     margin-left: 10px;
 }
 /*header left and right ends*/
@@ -222,7 +238,6 @@ header {
     padding-bottom: 2.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
     gap: 2rem;
 }
 
@@ -337,7 +352,6 @@ header {
     border: 1px solid #9C9C9C;
     border-style: solid;
     border-width: 1px;
-    /* border-image: linear-gradient(to right, white, rgba(0, 0, 0, .5)); */
     border-radius: 4px;
     padding: 1rem 2.5rem 1rem 1rem;
 }
@@ -425,7 +439,6 @@ input[type="tel"],
     width: 98%;
     border: none;
     border-radius: 4px;
-    /* font-size: 12px; */
     font-weight: 600;
     font-family: var(--normal-font);
 }
@@ -439,7 +452,6 @@ input[type="tel"],
 .form-submit-btn {
     background-color: var(--cta-btn-bg);
     width: 98%;
-    padding-block: 1rem;
     border: none;
     text-decoration: none;
     margin-top: 1.3rem;
@@ -483,11 +495,7 @@ input[type="tel"],
 /* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
     /* mobile containers */
-    .header-container,
-    .navigations,
-    .wid,
-    .testimonial-tweet,
-    .form-container {
+    :where(.header-container, .navigations, .wid, .testimonial-tweet, .form-container) {
         width: 100%;
         padding-inline: 4%;
     }
