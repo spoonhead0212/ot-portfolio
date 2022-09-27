@@ -74,13 +74,13 @@ header {
     margin-right: 3.5rem;
 }
 
-:where(.navigations_icon, .social-icon) li {
+:is(.navigations_icon, .social-icon) li {
     display: inline-block;
     margin-right: 1rem;
     transition: all .5s;
 }
 
-:where(.navigations_icon, .social-icon) li:hover {
+:is(.navigations_icon, .social-icon) li:hover {
     transform: scale(1.3);
     padding-inline: 5px;
 }
@@ -93,7 +93,7 @@ header {
     margin-right: 0;
 }
 
-:where(.navigations_icon, .social-icon) li a {
+:is(.navigations_icon, .social-icon) li a {
     color: var(--normal-text-clr);
     font-size: var(--normal-font-size);
 }
@@ -129,7 +129,6 @@ header {
 .my-img :is(img) {
     width: 100%;
     height: 100%;
-    
 }
 
 .header-container_left {
@@ -172,7 +171,7 @@ header {
     background-color: #3F8E00;
 }
 
-:where(.cta-btn, .form-submit-btn) a {
+:is(.cta-btn, .form-submit-btn) a {
     display: block;
     padding: .90rem 3rem .90rem 3rem;
     color: var(--normal-white-clr);
@@ -181,7 +180,7 @@ header {
     font-weight: 600;
 }
 
-:where(.cta-btn, .form-submit-btn) img {
+:is(.cta-btn, .form-submit-btn) img {
     margin-left: 10px;
 }
 /*header left and right ends*/
@@ -495,7 +494,7 @@ input[type="tel"],
 /* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
     /* mobile containers */
-    :where(.header-container, .navigations, .wid, .testimonial-tweet, .form-container) {
+    :is(.header-container, .navigations, .wid, .testimonial-tweet, .form-container) {
         width: 100%;
         padding-inline: 4%;
     }
