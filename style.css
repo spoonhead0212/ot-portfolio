@@ -60,6 +60,10 @@ header {
     padding-inline: .5rem;
 }
 
+.whiteBg {
+    background-color: white;
+}
+
 .logo span {
     color: var(--cta-btn-bg);
 }
@@ -341,7 +345,7 @@ header {
 
 .testimonial-tweet {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     width: var(--sections-width);
     margin-inline: auto;
     grid-gap: 2.2rem 1rem;
@@ -394,7 +398,7 @@ header {
     width: var(--sections-width);
     margin-inline: auto;
     display: grid;
-    grid-template-columns: repeat(2, minmax(190px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .workings::-webkit-scrollbar {
@@ -428,7 +432,6 @@ header {
 .form {
     width: 50%;
     margin-inline: auto;
-    /* border: 1px solid white; */
 }
 
 input[type="email"],
@@ -546,8 +549,8 @@ input[type="tel"],
 .change .bar3 {
     transform: rotate(45deg) translate(-8px, -8px);
 }
-
 /* --------------------- */
+
     /* navigation */
     .navvy {
         padding-block: 1rem;
@@ -591,8 +594,6 @@ input[type="tel"],
     .menu {
         margin-right: 0;
     }
-    /* ends */
-
     /* ends */
 
     .case-section {
@@ -674,11 +675,6 @@ input[type="tel"],
 @keyframes pro-image {
     from {left: -100%;}
     to {left: 0px;}
-
-    /* 0% {
-        opacity: 0;
-        transform: scale(1, 1)
-    } */
 }
 
 .animation-left {
