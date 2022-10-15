@@ -556,10 +556,16 @@ input[type="tel"],
         padding-block: 1rem;
         background-color: var(--normal-black-clr);
         position: absolute;
+        display: block;
         left: 0;
         top: 100%;
         width: 100%;
-        display: none;
+        opacity: 0;
+        transition: ease-in-out .5s;
+    }
+
+    .hamburger-show {
+        opacity: 1;
     }
 
     .navigations {
