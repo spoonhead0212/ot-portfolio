@@ -145,41 +145,11 @@ header {
 }
 
 /*cta btn*/
-.cta-btn {
-    background-color: transparent;
-    border: 2px solid white;
-    margin-top: 1.3rem;
-    cursor: pointer;
-    border-radius: 2px;
-    position: relative;
-    display: inline-block;
-    z-index: 2;
-}
-
-.cta-btn::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 8px;
-    left: 8px;
-    border-radius: 2px;
-    background-color: var(--cta-btn-bg);
-    box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
-    z-index: -1;
- }
-
- .cta-btn:hover::after {
-    top: 0;
-    left: 0;
-    transition: all ease-in-out .2s;
- }
-
 .form-submit-btn:hover {
     background-color: #3F8E00;
 }
 
-:is(.cta-btn, .form-submit-btn) a {
+.form-submit-btn a {
     display: block;
     padding: 1.25rem 3rem .90rem 3rem;
     color: var(--normal-white-clr);
@@ -188,10 +158,35 @@ header {
     font-weight: 600;
 }
 
-:is(.cta-btn, .form-submit-btn) img {
+.form-submit-btn img {
     margin-left: 10px;
 }
 /*header left and right ends*/
+
+.hit-me {
+    padding: .90rem 3rem;
+    color: var(--normal-white-clr);
+    font-family: var(--normal-font);
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+    background-color: var(--cta-btn-bg);
+    margin-top: 1.3rem;
+    cursor: pointer;
+    border-radius: 2px;
+    display: inline-block;
+    box-shadow: 10px 10px #292929;
+    transition: 400ms ease-in-out;
+}
+
+.hit-me:hover {
+    box-shadow: none;
+    background-color: #3F8E00;
+}
+
+.git-icon {
+    margin-left: 1rem;
+    width: 25px;
+}
 
 /*companies logo*/
 .companies-icons {
