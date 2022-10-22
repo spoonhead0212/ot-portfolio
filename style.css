@@ -78,6 +78,8 @@ header {
     margin-right: 3.5rem;
 }
 
+
+
 :is(.navigations_icon, .social-icon) li {
     display: inline-block;
     margin-right: 1rem;
