@@ -11,14 +11,17 @@ hamburgerMenu.addEventListener("click", () => {
   menuDiv.classList.toggle("hamburger-show")
 })
 
-// // 
-// window.addEventListener("scroll", () => {
-//   let menuNav = document.querySelector(".navigations")
-//    let currentScroll = window.pageXOffset;
-//   //  currentScroll tracks the page scroll level
-//   if (currentScroll >= 300) {
-//     menuNav.classList.add("hide-show-nav")
-//   } else {
-//     menuNav.classList.remove("hide-show-nav")
-//   }
-// })
+
+window.addEventListener("scroll", () => {
+  let menuWrap = document.querySelector(".navigations");
+// the whole menu is wrapped in here
+let topScroll = 0;
+// this is the page scroll pixel
+   if (topScroll < window.scrollY) {
+    menuWrap.classList.add("scroll-switch");
+   } else {
+    menuWrap.classList.remove("scroll-switch");
+   }
+   topScroll = window.scrollY;
+})
+
