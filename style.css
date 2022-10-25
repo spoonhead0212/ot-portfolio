@@ -61,10 +61,6 @@ header {
     transform: translate3d(0, -101%, 0);
 }
 
-.scroll-switch-wid {
-    width: 100%;
-}
-
 .logo a {
     color: var(--normal-white-clr);
     font-size: 1.5rem;
