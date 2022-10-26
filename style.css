@@ -506,6 +506,9 @@ input[type="tel"],
 
 /* makes all the middle divs jump to 100 percent on mobile */
 @media screen and (max-width: 973px) {
+    header {
+        padding-top: 1rem;
+    }
     /* mobile containers */
     :is(.header-container, .navigations, .wid, .testimonial-tweet, .form-container) {
         width: 100%;
@@ -578,7 +581,7 @@ input[type="tel"],
         background-color: var(--normal-black-clr);
         padding-block: 1.5rem;
         position: fixed;
-        top: 0;
+        top: -2px;
         z-index: 999;
     }
 

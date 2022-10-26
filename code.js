@@ -16,7 +16,6 @@ let menuWrap = document.querySelector(".navigations");
 let topScroll = 0;
 // this is the page scroll pixel
 window.addEventListener("scroll", () => {
-
    if (topScroll < window.scrollY) {
     menuWrap.classList.add("scroll-switch");
    } else {
