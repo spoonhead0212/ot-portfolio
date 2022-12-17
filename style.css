@@ -451,16 +451,24 @@ header {
 input[type="email"],
 input[type="tel"],
 .msg {
-    background: #F8F8F8;
+    background: transparent;
     margin-top: .4rem;
     margin-bottom: 1rem;
     padding: .5rem;
     line-height: 21px;
     width: 98%;
-    border: none;
-    border-radius: 4px;
+    color: var(--normal-white-clr);
+    border-color: var(--normal-text-clr);
+    border-width: 0 0 1px 0;
     font-weight: 600;
     font-family: "IBM font reg";
+}
+
+input[type="email"]:focus,
+input[type="tel"]:focus,
+.msg:focus {
+    border: none;
+    outline: none;
 }
 
 .form-label {
