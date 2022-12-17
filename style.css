@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "IBM font reg";
+    src: url(font/IBM_Plex_Mono/IBMPlexMono-Regular.ttf);
+}
+@font-face {
+    font-family: "Nunito header";
+    src: url(font/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,7 +30,7 @@
 }
 
 body {
-    font-family: var(--normal-font);
+    font-family: "IBM font reg";
     scroll-behavior: smooth;
 }
 
@@ -64,11 +73,9 @@ header {
 .logo a {
     color: var(--normal-white-clr);
     font-size: 1.5rem;
-    font-family: var(--headers-font);
+    font-family: "Nunito header";
     font-weight: 800;
     letter-spacing: 2px;
-    border: 3px solid white;
-    padding-inline: .5rem;
 }
 
 .whiteBg {
@@ -134,13 +141,13 @@ header {
 
 .content :is(h1) {
     color: var(--normal-white-clr);
-    font-family: var(--headers-font);
+    font-family: "Nunito header";
     font-size: 3.2rem;
 }
 
 .content :is(p) { 
     color: var(--normal-text-clr);
-    font-size: var(--normal-font);
+    font-size: "IBM font reg";
     line-height: 24px;
     margin-block: 1rem;
 }
@@ -164,7 +171,7 @@ header {
     display: block;
     padding: 1.25rem 3rem .90rem 3rem;
     color: var(--normal-white-clr);
-    font-family: var(--normal-font);
+    font-family: "IBM font reg";
     font-size: var(--normal-font-size);
     font-weight: 600;
 }
@@ -177,7 +184,7 @@ header {
 .hit-me {
     padding: .90rem 3rem;
     color: var(--normal-white-clr);
-    font-family: var(--normal-font);
+    font-family: "IBM font reg";
     font-size: var(--normal-font-size);
     font-weight: 600;
     background-color: var(--cta-btn-bg);
@@ -227,13 +234,14 @@ header {
 
 .case-section_div > h2 {
     margin-bottom: .5rem;
-    font-family: var(--headers-font);
+    font-family: "Nunito header";
     color: var(--normal-black-clr);
 }
 
 .case-section_div > p {
-    font-size: var(--normal-font);
+    font-size: "IBM normal font";
     line-height: 24px;
+    color: var(--normal-text-clr);
 }
 
 .case-section_div {
@@ -260,14 +268,14 @@ header {
 }
 
 .wid_content-div h2 {
-    font-family: var(--headers-font);
+    font-family: "Nunito header";
     color: var(--header-black-clr);
     margin-bottom: .5rem;
     margin-top: 1rem;
 }
 
 .wid_content-div p {
-    font-size: var(--normal-font);
+    font-size: "IBM font reg";
     line-height: 24px;
 }
 
@@ -389,7 +397,7 @@ header {
 }
 
 .profile span {
-    font-family: var(--headers-font);
+    font-family: "Nunito header";
     color: var(--normal-white-clr);
 }
 
@@ -452,7 +460,7 @@ input[type="tel"],
     border: none;
     border-radius: 4px;
     font-weight: 600;
-    font-family: var(--normal-font);
+    font-family: "IBM font reg";
 }
 
 .form-label {
@@ -569,12 +577,12 @@ input[type="tel"],
         left: 0;
         top: 100%;
         width: 100%;
-        opacity: 0;
+        transform: translate(0, -130%);
         transition: ease-in-out .5s;
     }
 
     .hamburger-show {
-        opacity: 1;
+        transform: translate(0, 0);
     }
 
     .navigations {
