@@ -302,6 +302,7 @@ header {
     background: #FFF6E9;
     color: var(--cta-btn-bg2);
 }
+
 .blue {
     background: #D0E6FF;
     ;
@@ -321,6 +322,11 @@ header {
     cursor: pointer;
     border-radius: 4px;
     font-weight: 600;
+    transition: 200ms ease-in-out;
+}
+
+.btn-exp:hover {
+    box-shadow: 5px 5px #201f1f;
 }
 
 .btn-exp :is(a) {
@@ -337,6 +343,7 @@ header {
 .exp-yellow {
     background: var(--cta-btn-bg2);
 }
+
 .exp-blue {
     background: var(--cta-btn-bg3);
 }
@@ -375,6 +382,12 @@ header {
     border-width: 1px;
     border-radius: 4px;
     padding: 1rem 2.5rem 1rem 1rem;
+    transition: 200ms ease-in-out;
+}
+
+.testimonial_div:hover {
+    box-shadow: 5px 5px rgb(218, 202, 202);
+    transform: scale(1.05);
 }
 
 .quote-icon {
