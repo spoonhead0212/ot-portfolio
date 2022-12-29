@@ -136,7 +136,7 @@ header {
 .header-container_double {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 4rem;
 }
 
 .content :is(h1) {
@@ -248,7 +248,7 @@ header {
     width: 60%;
     text-align: center;
     margin-inline: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 /* case section ends */
 
@@ -260,6 +260,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .wid_content {
@@ -658,16 +659,19 @@ input[type="tel"]:focus,
 
     .wid {
         gap: 1rem;
+        margin-bottom: 2rem;
         grid-template-columns: none;
     }
 
     /* make image go back to it normal size */
+    
     .wid_img {
         height: unset;
     }
 
     .wid-mobile {
         margin-bottom: 1rem;
+        /* margin-block: 5rem; */
     }
 
     .testimonial {
